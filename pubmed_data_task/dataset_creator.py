@@ -134,7 +134,7 @@ def create_pmid2details_ontologies(
         print('[FINISHED]Parsing file:',file)
         # https: // stackoverflow.com/questions/5352546/extract-subset-of-key-value-pairs-from-python-dictionary-object
         pbar2 = tqdm(total=len(_articles))
-
+        texts = []
         for article in _articles:
             # pmid2details[int(article['pmid'])] = {
             #     k: article[k] for k in fields}
@@ -143,6 +143,7 @@ def create_pmid2details_ontologies(
             abstract = article['abstract']
             text = title+abstract
             # print('Linking article:',pmid)
+
             spans = e_linker.link_entities(text)
             # print('[FINISHED] Linking article:',pmid)
             
