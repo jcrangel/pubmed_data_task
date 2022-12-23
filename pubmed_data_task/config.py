@@ -6,7 +6,7 @@ TERM2FREQ = '/home/julio/repos/pubmed_processed_data/dicts/term2frequency.pickle
 PMID2INFO = '/home/julio/repos/pubmed_processed_data/dicts/pmid2info.pickle'
 NERDIR = '/home/julio/repos/queryengine/NER/union'
 PMID2ENTITIES = '/home/julio/repos/pubmed_processed_data/dicts/pmid2entities.pickle'
-PMID2DETAILS = '/home/julio/repos/pubmed_processed_data/dicts/pmid2details.pickle'
+PMID2DETAILS = '/home/julio/repos/pubmed_processed_data/query_engine/pmid2details.pickle'
 
 PMIDS_SIZEABS_MORE10 = '/home/julio/repos/queryengine/faiss_search/dumps/pmids_abstract_morethan10.npy'
 
